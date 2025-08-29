@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!-- HTML5 -->
+<html lang="en"> <!-- Bahasa dokumen = English -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Supaya teks bisa tampil semua karakter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Biar responsive di HP -->
+    <title>Belajar Form</title> <!-- Judul tab browser -->
+</head>
+
+<body>
+    <form action="">
+        <!-- Input teks biasa -->
+        <label for="username">username :</label> <!-- Label untuk input username -->
+        <input type="text" id="username"> <!-- Input teks -->
+
+        <br> <!-- Pindah baris -->
+
+        <!-- Input password -->
+        <label for="password">password :</label> <!-- Label untuk input password -->
+        <input type="password" id="password"> <!-- Input password (tulisan disamarkan) -->
+
+        <br>
+
+        <!-- Input radio button (pilih salah satu) -->
+        <input type="radio" id="pria" name="kelamin">
+        <!-- Radio untuk pria, fungsi "name" adalah agar sistem tau bahwa mereka 1 group -->
+        <label for="pria">pria</label>
+        <input type="radio" id="wanita" name="kelamin"> <!-- Radio untuk wanita -->
+        <label for="wanita">wanita</label>
+
+        <br>
+
+        <!-- Input checkbox (bisa pilih lebih dari satu) -->
+        <input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+        <input type="checkbox" id="tidur"><label for="tidur">tidur</label>
+        <input type="checkbox" id="makan"><label for="makan">makan</label>
+
+        <br>
+        <!-- <textarea></textarea> -->
+        <!-- Tombol submit -->
+        <!-- <button type="submit" value="kirim"> -->
+
+        <select name="" id="">
+            <option value="">bandung</option>
+            <option value="">jogja</option>
+            <option value="">surabaya</option>
+        </select>
+        <br>
+
+    </form>
+</body>
+
+</html>
+
+<!-- tips: CTRL + D = select kata yang sama di VS Code -->
