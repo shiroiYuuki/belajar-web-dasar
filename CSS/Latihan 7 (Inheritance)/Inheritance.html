@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; 
+            color: green; /* semua teks di body default berwarna hijau */
+        }
+
+        a {
+            color: inherit; /* "inherit" = ikut warna dari parent (dalam hal ini body → hijau) */
+        }
+
+        a:hover {
+            color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Hello world</h1> <!-- warna hijau (ikut body) -->
+    <a href="#">Ini link gan</a> <!-- juga hijau, karena color: inherit -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Iusto excepturi, veritatis aut dolor harum veniam reiciendis modi, 
+       possimus rem at blanditiis iste repellendus assumenda saepe. 
+       Sequi et corporis sit ex.</p> <!-- juga hijau -->
+</body>
+</html>

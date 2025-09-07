@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specificity CSS</title>
+  <style>
+    /* 🔹 Urutan prioritas CSS (lemah → kuat):
+       Elemen < Class < ID < Inline < !important
+       Specificity format: (inline, id, class/pseudo, elemen) */
+
+    p { color: blue; }              /* elemen → (0,0,0,1) */
+    .teks { color: green; }         /* class → (0,0,1,0) */
+    #khusus { color: red; }         /* id → (0,1,0,0) */
+    p.teks { color: orange; }       /* elemen + class → (0,0,1,1) */
+    div p.teks { color: purple; }   /* chain elemen + class → (0,0,1,2) */
+    p.teks#khusus { color: brown; } /* class + id + elemen → (0,1,1,1) */
+
+    /* Inline style (style="...") → (1,0,0,0) → paling kuat (kecuali !important) */
+  </style>
+</head>
+<body>
+  <h2>Contoh Specificity</h2>
+  <div>
+    <!-- Elemen ini punya class & id, plus inline style -->
+    <p class="teks" id="khusus" style="color: pink;">
+      Hello Specificity!
+    </p>
+  </div>
+
+  <h2>Tabel Specificity</h2>
+  <pre>
+  Selector             Specificity
+  --------------------------------
+  p                    (0,0,0,1)
+  .teks                (0,0,1,0)
+  #khusus              (0,1,0,0)
+  p.teks               (0,0,1,1)
+  div p.teks           (0,0,1,2)
+  p.teks#khusus        (0,1,1,1)
+  style="..."          (1,0,0,0)
+  !important           override semua
+  </pre>
+</body>
+</html>
