@@ -1,0 +1,10 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;  /* kalo lebih dari 1 maka, program akan cari file font arial dulu, kalo gk ada akan ganti ke helvetica dan seterusnya*/
+    font-size: 100px; /*buat gedein font, px = pixel*/
+    font-weight: bold;  /* huruf tebal */
+    font-variant: small-caps; /* huruf kecil jadi kapital kecil */
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 50px; /* nambahin spasi di teks*/
+}

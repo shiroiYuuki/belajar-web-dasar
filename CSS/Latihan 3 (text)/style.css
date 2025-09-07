@@ -1,0 +1,18 @@
+h1 {
+    color: #222222;
+    font-size: 150px;
+    text-align: center; /* center, left (default), right, justify */
+    text-decoration: underline; /* bisa pakai none, underline, overline, line-through. cocok buat link*/
+    text-transform: none; /* untuk mengontrol kapital bisa menggunakannone, lowercase, uppercase, capitalize*/ 
+}
+
+p {
+    text-indent: 100px; /* memberikan indentasi (px, %) */
+    text-transform: capitalize;
+    word-spacing: 5px; /*nambah spasi antar kata*/
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: 5px; /*nambah spasi antar huruf*/
+}
