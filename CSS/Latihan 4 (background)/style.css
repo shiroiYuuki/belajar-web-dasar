@@ -1,0 +1,15 @@
+body {
+    background-color: aquamarine;
+    background-image: url(assetBackground/moroccan-flower.png); /*buat nambahin gambar sebagai background, akan otomatis repeat x dan y*/
+    background-repeat: no-repeat; /*mengulangi gambar cuman ke sumbu X (samping), bisa juga menggunakan "no repeat" atau "repeat-x/y"*/
+    background-position: bottom center;
+}   
+
+/*bisa juga cuman jadi satu barus seperti 
+
+background: color url() position repeat;
+
+contoh:
+background: aquamarine url(assetBackground/moroccan-flower.png) bottom center no repeat;
+
+*/

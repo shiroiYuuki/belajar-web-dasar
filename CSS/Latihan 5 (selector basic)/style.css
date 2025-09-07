@@ -1,0 +1,28 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2 {
+    color: green;
+} /*bisa menggunakan koma sebagai grup*/
+
+
+ul li a { /* bacanya dari kanan ke kiri, "Css, tolong pilihkan saya tag a yang ada di dlam li yang ada di dalam ul"*/
+    color: aqua;
+}
+
+ol li a {
+    color: red;
+}
+
+#paragraf1 { /* untuk ID pakai # di awal*/
+    color: blueviolet;
+}
+
+.paragraf2 { /* untuk class pakai . di awal*/
+    color: rebeccapurple;
+} /*disarankan gunakan element html dulu untuk modifikasi, kalo gk ada cara lain lagi baru pakai id/class*/
+
+p.paragraf2 { /*"Css, tolong pilihkan saya p tapi yang punya class paragraf2"*/
+    font-size: 40px;
+} 

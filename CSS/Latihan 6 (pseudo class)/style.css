@@ -1,0 +1,46 @@
+.hello:link {
+    /* :link = kondisi link BELUM pernah dikunjungi */
+    color: aqua;
+}
+
+.hello:hover {
+    /* :hover = kondisi saat mouse diarahkan ke elemen */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: green;
+}
+
+.hello:active {
+    /* :active = kondisi saat elemen diklik (tekan, tapi belum dilepas) */
+    font-style: italic;
+}
+
+.hello:visited {
+    /* :visited = link SUDAH pernah dikunjungi */
+    color: red;
+}
+
+
+li:first-child a {   /* pilih <a> di dalam <li> PERTAMA */
+    color: green;
+}
+
+li:nth-child(5) a {  /* pilih <a> di dalam <li> ke-5, bisa pakai "2n" untuk kelipatan "2n-2" kelipatan 2 + 3, bisa pakai even untuk genap saja, dan pakai odd untuk ganjil*/
+    color: rgb(255, 102, 0);
+}
+
+li:last-child a {    /* pilih <a> di dalam <li> TERAKHIR */
+    color: maroon;
+}
+
+li:nth-child(odd) a:hover {   /* pilih <a> di dalam <li> PERTAMA */
+    color: red;
+}
+
+p:first-of-type { /*memilih elemen pertama dari sebuah jenis/tipe tag*/
+    color: red;
+}
+
+p:last-of-type { /*memilih elemen terakhir dari sebuah jenis/tipe tag*/
+    color: red;
+}
